@@ -1,0 +1,5 @@
+// code to filter user using email and get data
+
+const email = req.params.email;
+    let filtered_users = users.filter((user) => user.email === email);
+    res.send(filtered_users);
